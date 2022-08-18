@@ -1,0 +1,73 @@
+package stepDefinitions;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import org.junit.Assert;
+import org.openqa.selenium.Keys;
+import pages.AmazonPage;
+import utilities.ConfigurationReader;
+import utilities.Driver;
+
+public class AmazonStepDefinations01 {
+
+    AmazonPage amazonPage = new AmazonPage();
+
+    @Given("user goes thru amazon webPage")
+    public void user_goes_thru_amazon_web_page() {
+        Driver.getDriver().get(ConfigurationReader.getProperty("AmazonURL"));
+
+    }
+
+    @Given("searchs for Iphone")
+    public void searchs_for_ıphone() {
+        amazonPage.searchBox.sendKeys("iphone" + Keys.ENTER);
+
+    }
+
+    @Then("sees if results contains iphone.")
+    public void sees_if_results_contains_iphone() {
+        amazonPage.endResultIphone.getText();
+        Assert.assertTrue(amazonPage.endResultIphone.getText().contains("iphone"));
+
+    }
+
+    @Given("user goes thru amazon Webpage")
+    public void user_goes_thru_amazon_webpage() {
+        Driver.getDriver().get("https://www.amazon.com");
+    }
+
+    @Given("searches for tea pot")
+    public void searches_for_tea_pot() {
+        amazonPage.searchBox.sendKeys("teapot" + Keys.ENTER);
+
+    }
+
+    @Then("Sees if results contains tea pot")
+    public void sees_if_results_contains_tea_pot() {
+        amazonPage.endResultTeaPot.getText();
+        Assert.assertTrue(amazonPage.endResultTeaPot.getText().contains("teapot"));
+
+    }
+
+    @Given("SEARCHS FOR FLOWER")
+    public void searchs_for_flower() {
+        amazonPage.searchBox.sendKeys("flower", Keys.ENTER);
+
+
+    }
+
+    @Then("sees if results contains flower")
+    public void sees_if_results_contains_flower() {
+        amazonPage.endResultFlower.getText();
+        Assert.assertTrue(amazonPage.endResultTeaPot.getText().contains("flower"));
+
+    }
+
+    @And("sayfayi kapatir")
+    public void sayfayi_kapatir() throws InterruptedException {
+        Driver.closeDriver();
+
+    }
+
+}
