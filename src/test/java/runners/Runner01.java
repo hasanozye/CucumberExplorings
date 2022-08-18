@@ -9,10 +9,6 @@ import org.junit.runner.RunWith;
         glue = "stepDefinitions",
         tags = "@parametre",
         dryRun = false
-
-
-
-
 )
 
 
