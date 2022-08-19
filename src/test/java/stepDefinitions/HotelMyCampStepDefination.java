@@ -43,4 +43,14 @@ public class HotelMyCampStepDefination {
     public void girisYapilamadiginiTestEder() {
         Assert.assertTrue(hmcPage.girisYapilamadiYaziElementi.isDisplayed());
     }
+
+    @And("kullanici adi olarak {string} girmeli")
+    public void kullaniciAdiOlarakGirmeli(String userName) {
+        hmcPage.usernameTextBox.sendKeys(userName);
+    }
+
+    @And("password olarak {string} girmeli")
+    public void passwordOlarakGirmeli(String password) {
+        hmcPage.passwordTextBox.sendKeys(password);
+    }
 }

@@ -1,4 +1,4 @@
-
+@negative
   Feature: US109_NegativeLoginTesti
 
     Scenario: TC12 Yanlis username dogru password ile giris yap
