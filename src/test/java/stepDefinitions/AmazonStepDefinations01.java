@@ -64,10 +64,29 @@ public class AmazonStepDefinations01 {
 
     }
 
+    @Given("kullanici {string} sayfasina gider")
+    public void kullanici_sayfasina_gider(String istenenURL) {
+        Driver.getDriver().get(ConfigurationReader.getProperty(istenenURL));
+    }
+
+    @Given("{string} icin arama yapar")
+    public void icin_arama_yapar(String arananKelime) {
+        amazonPage.searchBox.sendKeys(arananKelime + Keys.ENTER);
+
+    }
+
     @And("sayfayi kapatir")
     public void sayfayi_kapatir() throws InterruptedException {
         Driver.closeDriver();
 
     }
+
+    @Then("Sonuclarin {string} icerdiğini test eder")
+    public void sonuclarin_icerdiğini_test_eder(String arananKelime) {
+
+        String sonucYazisiStr = amazonPage.endResultFlower.getText();
+        Assert.assertTrue(sonucYazisiStr.contains(arananKelime));
+    }
+
 
 }
