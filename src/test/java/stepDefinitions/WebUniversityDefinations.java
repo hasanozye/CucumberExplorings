@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +8,8 @@ import org.openqa.selenium.interactions.Actions;
 import pages.WebUniversityPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
+
+import java.io.IOException;
 
 public class WebUniversityDefinations {
     WebUniversityPage univ = new WebUniversityPage();
@@ -67,5 +70,10 @@ public class WebUniversityDefinations {
     @Then("biraz {int} saniye bekle")
     public void birazSaniyeBekle(int bekle) {
         ReusableMethods.waitFor(4);
+    }
+
+    @And("screenshot alin")
+    public void screenshotAlin() throws IOException {
+        ReusableMethods.getScreenshot("wtf dud");
     }
 }

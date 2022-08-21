@@ -20,10 +20,11 @@ import java.util.function.Function;
 public class ReusableMethods {
 
     public static String getScreenshot(String name) throws IOException {
-        // naming the screenshot with the current date to avoid duplication
-        String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         // TakesScreenshot is an interface of selenium that takes the screenshot
         TakesScreenshot ts = (TakesScreenshot) Driver.getDriver();
+        // naming the screenshot with the current date to avoid duplication
+        String date = new SimpleDateFormat("yyMMddhhmmss").format(new Date());
+
         File source = ts.getScreenshotAs(OutputType.FILE);
         // full path to the screenshot location
         String target = System.getProperty("user.dir") + "/test-output/Screenshots/" + name + date + ".png";
@@ -148,4 +149,7 @@ public class ReusableMethods {
 
         return element;
     }
+
+
+
 }
