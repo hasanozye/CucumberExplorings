@@ -13,6 +13,7 @@ Feature: US112_Web University
   Then Ok diyerek Popup'i kapatin
   And ilk sayfaya geri donun
   And ilk sayfaya donuldugunu test edin
+    And screenshot alin
     Then biraz 3 saniye bekle
     Examples:
       | username | password |
