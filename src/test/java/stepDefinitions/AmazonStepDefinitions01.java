@@ -9,7 +9,7 @@ import pages.AmazonPage;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 
-public class AmazonStepDefinations01 {
+public class AmazonStepDefinitions01 {
 
     AmazonPage amazonPage = new AmazonPage();
 
