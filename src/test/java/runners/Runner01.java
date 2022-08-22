@@ -6,8 +6,9 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/features",
+        plugin={"html:target\\cucumber-reports.html"},
         glue = "stepDefinitions",
-        tags = "@heroKupApp",
+        tags = "@amazonspace",
         dryRun = false
 )
 
