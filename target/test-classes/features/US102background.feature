@@ -1,4 +1,4 @@
-@amazontum
+ @paralel2
 Feature: US102background ile amazon search test
 
   Background: amazon sayfasina gider

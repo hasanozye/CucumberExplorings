@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -14,26 +15,26 @@ import java.io.IOException;
 public class WebUniversityDefinations {
     WebUniversityPage univ = new WebUniversityPage();
 
-    @Then("sayfada assagiIn")
-    public void sayfada_assagi_ın() {
+    @Given("Login Porta' a kadar asagi iner")
+    public void login_porta_a_kadar_asagi_iner() {
         ReusableMethods.hover(univ.webUniversityLoginPortal);
 
     }
 
-    @Then("loginPortal butonuna bas")
-    public void login_portal_butonuna_bas() {
+    @Given("Login Portala tiklar")
+    public void login_portala_tiklar() {
         univ.webUniversityLoginPortal.click();
     }
 
-    @Then("diger windowa gec")
-    public void diger_windowa_gec() {
+    @Given("Diger window'a gecin")
+    public void diger_window_a_gecin() {
         ReusableMethods.switchToWindow("WebDriver | Login Portal");
     }
 
-    @Then("{string} ve {string}")
-    public void ve(String userName, String password) {
+    @Then("{string} ve {string} kutularina deger yazar")
+    public void ve_kutularina_deger_yazar(String userName, String passWord) {
         univ.webUniversityUserNameButton.sendKeys(userName);
-        univ.webUniversityUserNameButton.sendKeys(password);
+        univ.webUniversityPasswordButton.sendKeys(passWord);
 
     }
 
@@ -53,13 +54,12 @@ public class WebUniversityDefinations {
         Driver.getDriver().switchTo().alert().accept();
     }
 
-    @Then("ilk sayfaya geri donun")
+    @Then("Ilk sayfaya geri donun")
     public void ilk_sayfaya_geri_donun() {
         ReusableMethods.switchToWindow("WebDriverUniversity.com");
-
     }
 
-    @Then("ilk sayfaya donuldugunu test edin")
+    @Then("Ilk sayfaya donuldugunu test edin")
     public void ilk_sayfaya_donuldugunu_test_edin() {
         String actualTitle = Driver.getDriver().getTitle();
         String expectedTitle = "WebDriverUniversity.com";
@@ -69,11 +69,6 @@ public class WebUniversityDefinations {
 
     @Then("biraz {int} saniye bekle")
     public void birazSaniyeBekle(int bekle) {
-        ReusableMethods.waitFor(4);
-    }
-
-    @And("screenshot alin")
-    public void screenshotAlin() throws IOException {
-        ReusableMethods.getScreenshot("wtf dud");
+        ReusableMethods.waitFor(bekle);
     }
 }

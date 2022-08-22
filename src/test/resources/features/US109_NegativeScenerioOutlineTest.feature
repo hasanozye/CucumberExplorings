@@ -1,4 +1,4 @@
-@negativeOutline
+@negativeOutline @testparalel1
 Feature: US10901_Negati ve Scenerio Outline Test
 
   Scenario Outline: TC15 farkli kullanici adi ve parola

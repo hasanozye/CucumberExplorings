@@ -1,5 +1,5 @@
 
-@parametre
+@paralel1 @parametre
 Feature: Parametreli step definiton
 
   Scenario: TC04_parametre kullanımı

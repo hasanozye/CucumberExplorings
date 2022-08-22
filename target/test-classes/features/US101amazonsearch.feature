@@ -1,3 +1,5 @@
+@paralel1
+
 Feature: US101amazon_search
 
   Scenario: TC1_Amazon Search Test

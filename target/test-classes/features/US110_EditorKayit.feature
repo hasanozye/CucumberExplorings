@@ -1,4 +1,4 @@
-@featurebitch
+@featurebitch @testparalel2
 
 Feature: US110_Editor Kayit
   Scenario Outline: TC16
