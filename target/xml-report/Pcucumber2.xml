@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="49.787">
+    <testcase classname="US110_Editor Kayit" name="TC16" time="10.965">
+        <system-out><![CDATA[Given kullanici "EDB" sayfasina gider.......................................passed
+Then new butonuna basar.....................................................passed
+Then firstname olarak "alkan" girer.........................................passed
+Then Lastname olarak "tuncer" girer.........................................passed
+Then Position olarak "DEVOPS" girer.........................................passed
+Then Office olarak "nc" girer...............................................passed
+Then Extension olarak "qa" girer............................................passed
+Then Start date olarak "2022-10-10" girer...................................passed
+Then Salary olarak "100000" girer...........................................passed
+And kullanici Create tusuna basar...........................................passed
+When kullanici "alkan" ile arama yapar......................................passed
+And isim bolumunde "alkan" dogrular.........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US110_Editor Kayit" name="TC16_2" time="11.086">
+        <system-out><![CDATA[Given kullanici "EDB" sayfasina gider.......................................passed
+Then new butonuna basar.....................................................passed
+Then firstname olarak "MUHAMMED" girer......................................passed
+Then Lastname olarak "guney" girer..........................................passed
+Then Position olarak "DEVOPS" girer.........................................passed
+Then Office olarak "almanya" girer..........................................passed
+Then Extension olarak "qa" girer............................................passed
+Then Start date olarak "2022-10-10" girer...................................passed
+Then Salary olarak "12300000" girer.........................................passed
+And kullanici Create tusuna basar...........................................passed
+When kullanici "MUHAMMED" ile arama yapar...................................passed
+And isim bolumunde "MUHAMMED" dogrular......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US110_Editor Kayit" name="TC16_3" time="8.114">
+        <system-out><![CDATA[Given kullanici "EDB" sayfasina gider.......................................passed
+Then new butonuna basar.....................................................passed
+Then firstname olarak "hasan" girer.........................................passed
+Then Lastname olarak "ozyer" girer..........................................passed
+Then Position olarak "QA consultant" girer..................................passed
+Then Office olarak "dubai" girer............................................passed
+Then Extension olarak "qa" girer............................................passed
+Then Start date olarak "2022-10-10" girer...................................passed
+Then Salary olarak "100000" girer...........................................passed
+And kullanici Create tusuna basar...........................................passed
+When kullanici "hasan" ile arama yapar......................................passed
+And isim bolumunde "hasan" dogrular.........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US112 WebUniversity Window Handle" name="TC17 Reusuble Methots ile window handle" time="19.03">
+        <system-out><![CDATA[Given kullanici "WDU" sayfasina gider.......................................passed
+And Login Porta' a kadar asagi iner.........................................passed
+And Login Portala tiklar....................................................passed
+And Diger window'a gecin....................................................passed
+Then "Bilal" ve "SAFAK" kutularina deger yazar..............................passed
+And WebUniversity Login butonuna basar......................................passed
+And Popup'ta cikan yazinin "validation failed" oldugunu test edin...........passed
+Then Ok diyerek Popup'i kapatin.............................................passed
+And Ilk sayfaya geri donun..................................................passed
+And Ilk sayfaya donuldugunu test edin.......................................passed
+Then biraz 3 saniye bekle...................................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

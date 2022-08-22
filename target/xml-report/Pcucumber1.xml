@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="54.571">
+    <testcase classname="US10901_Negati ve Scenerio Outline Test" name="TC15 farkli kullanici adi ve parola" time="19.069">
+        <system-out><![CDATA[Given kullanici "HMCUrl" sayfasina gider....................................passed
+Then login linkine tiklar...................................................passed
+And kullanici adi olarak "manager34" girmeli................................passed
+And password olarak "pass123" girmeli.......................................passed
+And login butonuna basar....................................................passed
+And giris yapilamadigini test eder..........................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US10901_Negati ve Scenerio Outline Test" name="TC15 farkli kullanici adi ve parola 2" time="17.381">
+        <system-out><![CDATA[Given kullanici "HMCUrl" sayfasina gider....................................passed
+Then login linkine tiklar...................................................passed
+And kullanici adi olarak "manager" girmeli..................................passed
+And password olarak "manager88" girmeli.....................................passed
+And login butonuna basar....................................................passed
+And giris yapilamadigini test eder..........................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US10901_Negati ve Scenerio Outline Test" name="TC15 farkli kullanici adi ve parola 3" time="17.396">
+        <system-out><![CDATA[Given kullanici "HMCUrl" sayfasina gider....................................passed
+Then login linkine tiklar...................................................passed
+And kullanici adi olarak "manager2" girmeli.................................passed
+And password olarak "manager1!" girmeli.....................................passed
+And login butonuna basar....................................................passed
+And giris yapilamadigini test eder..........................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
