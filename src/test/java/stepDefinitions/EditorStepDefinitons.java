@@ -64,7 +64,7 @@ public class EditorStepDefinitons {
 
     @And("isim bolumunde {string} dogrular")
     public void isimBolumundeDogrular(String firstSearch) {
-        String sonuc=editorPage.aramasonucuElement.getText();
+        String sonuc = editorPage.aramasonucuElement.getText();
         Assert.assertTrue(sonuc.contains(firstSearch));
     }
 

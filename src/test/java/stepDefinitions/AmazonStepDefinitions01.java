@@ -46,7 +46,7 @@ public class AmazonStepDefinitions01 {
     @Then("Sees if results contains tea pot")
     public void sees_if_results_contains_tea_pot() {
         amazonPage.endResultTeaPot.getText();
-        Assert.assertTrue(amazonPage.endResultTeaPot.getText().contains("teapot"));
+        Assert.assertTrue(amazonPage.endResultTeaPot.getText().contains("tea"));
 
     }
 
@@ -60,7 +60,7 @@ public class AmazonStepDefinitions01 {
     @Then("sees if results contains flower")
     public void sees_if_results_contains_flower() {
         amazonPage.endResultFlower.getText();
-        Assert.assertTrue(amazonPage.endResultTeaPot.getText().contains("flower1"));
+        Assert.assertTrue(amazonPage.endResultTeaPot.getText().contains("flower"));
 
     }
 
