@@ -18,7 +18,6 @@ public class WebUniversityDefinations {
     @Given("Login Porta' a kadar asagi iner")
     public void login_porta_a_kadar_asagi_iner() {
         ReusableMethods.hover(univ.webUniversityLoginPortal);
-
     }
 
     @Given("Login Portala tiklar")

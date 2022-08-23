@@ -27,11 +27,15 @@ public class Driver {
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
+                    driver.manage().window().maximize();
+                    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
                     break;
 
                 case "safari":
                     WebDriverManager.safaridriver().setup();
                     driver = new SafariDriver();
+                    driver.manage().window().maximize();
+                    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
                     break;
             }
         }
