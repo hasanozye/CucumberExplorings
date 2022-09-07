@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/Pcucumber1.json",
                 "junit:target/xml-report/Pcucumber1.xml"},
         glue = "stepDefinitions",
-        tags = "@testparalel1",
+        tags = "@paralel1",
         dryRun = false
 )
 public class ParalelTestRunner1 {
